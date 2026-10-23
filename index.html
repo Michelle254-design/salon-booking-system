@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Book salon and barber appointments online with Velvet & Blade.">
+<title>Velvet & Blade | Book an Appointment</title>
+<style>
+:root{--ink:#172b27;--muted:#687872;--paper:#f6f5f0;--card:#fffefa;--gold:#b28b55;--gold2:#e5cfaa;--line:#e6e2d8;--green:#24483d;--danger:#a8323e;--ok:#176b4d;--shadow:0 20px 60px rgba(23,43,39,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55}button,input,select,textarea{font:inherit}button,a{cursor:pointer}.shell{width:min(1120px,calc(100% - 32px));margin:auto}header{position:sticky;top:0;z-index:5;background:#f6f5f0ed;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav{display:flex;align-items:center;justify-content:space-between;padding:15px 0;gap:14px}.brand{font-weight:850;letter-spacing:.05em;text-decoration:none;color:var(--ink);display:flex;align-items:center;gap:10px}.mark{width:39px;height:39px;border-radius:50%;display:grid;place-items:center;background:var(--ink);color:var(--gold2);font-size:1.2rem}.navlinks{display:flex;gap:20px;align-items:center}.navlinks a{color:var(--muted);font-size:.9rem;font-weight:700;text-decoration:none}.btn{border:0;border-radius:999px;padding:12px 19px;font-weight:800;display:inline-flex;justify-content:center;align-items:center;text-decoration:none;transition:.18s}.primary{background:var(--ink);color:white}.primary:hover{background:#31564a;transform:translateY(-1px)}.soft{background:#f0e7d7;color:var(--ink)}.hero{margin-top:25px;padding:clamp(30px,7vw,78px);border-radius:27px;min-height:365px;display:flex;flex-direction:column;justify-content:center;color:white;background:radial-gradient(ellipse at 88% 15%,#b28b5540,transparent 25%),linear-gradient(125deg,#142a25,#24483d 65%,#3d5a4b);box-shadow:0 24px 70px #172b271b;overflow:hidden;position:relative}.eyebrow{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:#e5cfaa;font-weight:850}.hero h1{font:500 clamp(2.5rem,6vw,5rem)/1.02 Georgia,serif;letter-spacing:-.05em;max-width:720px;margin:16px 0}.hero h1 em{color:var(--gold2);font-weight:500}.hero p{max-width:530px;color:#d5e0d9;margin:0 0 24px}.actions{display:flex;flex-wrap:wrap;gap:10px}.hero .soft{background:#ffffff18;color:white;border:1px solid #ffffff38}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:17px 0 52px}.stat{background:#fffefa;border:1px solid var(--line);padding:17px 20px;border-radius:15px}.stat b{display:block}.stat span{font-size:.85rem;color:var(--muted)}section{scroll-margin-top:90px}.heading{display:flex;justify-content:space-between;gap:20px;align-items:end;margin:0 0 20px}.kicker{font-size:.74rem;text-transform:uppercase;letter-spacing:.16em;color:#8f6a39;font-weight:850}.heading h2{font:500 clamp(1.9rem,3vw,2.5rem)/1.15 Georgia,serif;letter-spacing:-.04em;margin:4px 0}.heading p{color:var(--muted);max-width:390px;margin:0}.services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:55px}.service{padding:23px;background:var(--card);border:1px solid var(--line);border-radius:18px;transition:.2s}.service:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.serviceicon{width:45px;height:45px;border-radius:50%;display:grid;place-items:center;background:#f2eadc;font-size:1.35rem}.service h3{margin:14px 0 4px}.service p{color:var(--muted);font-size:.9rem;min-height:44px;margin:0 0 16px}.servicebottom{display:flex;justify-content:space-between;align-items:center;gap:8px}.price{font-weight:900}.duration{display:block;font-size:.78rem;color:var(--muted);font-weight:500}.layout{display:grid;grid-template-columns:1.1fr .9fr;gap:19px;align-items:start;margin-bottom:54px}.panel{background:var(--card);border:1px solid var(--line);border-radius:21px;padding:clamp(20px,3vw,29px);box-shadow:var(--shadow)}.panel h3{font:500 1.55rem Georgia,serif;margin:0 0 5px}.muted{color:var(--muted);font-size:.9rem;margin:0 0 20px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:6px;min-width:0}.full{grid-column:1/-1}label{font-size:.85rem;font-weight:800}input,select,textarea{width:100%;border:1px solid #dedbd1;border-radius:11px;background:#fffefa;padding:12px;color:var(--ink);outline:none}input:focus,select:focus,textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px #b28b5526}.hint{font-size:.77rem;color:var(--muted)}.submit{width:100%;margin-top:17px}.notice{display:none;padding:12px;border-radius:11px;margin-top:12px;font-size:.9rem}.notice.show{display:block}.notice.ok{background:#eaf8ef;color:var(--ok)}.notice.bad{background:#fff0f0;color:var(--danger)}.summary{padding:19px;background:linear-gradient(140deg,#f5eee2,#fffdf7);border:1px solid #e8ddca;border-radius:15px}.summarytop{display:flex;justify-content:space-between;gap:10px}.summary h4{margin:0 0 5px}.summary p{margin:0;color:var(--muted);font-size:.88rem}.summaryprice{font-size:1.35rem;font-weight:900;color:#8f6a39}.summaryline{margin-top:15px;color:#52635c;font-size:.9rem}.note{color:var(--muted);font-size:.78rem;margin-top:15px}.admin{margin-bottom:55px}.adminbar{display:flex;gap:10px;flex-wrap:wrap}.adminbar input{max-width:260px}.bookinglist{display:grid;gap:11px;margin-top:18px}.booking{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;padding:15px;border:1px solid var(--line);border-radius:14px}.booking h4{margin:0 0 4px}.booking p{margin:3px 0;color:var(--muted);font-size:.85rem;overflow-wrap:anywhere}.empty{padding:22px;border:1px dashed #d9d2c4;border-radius:14px;color:var(--muted);text-align:center}.danger{background:#fff0f0;color:var(--danger)}.small{font-size:.8rem;padding:8px 12px}footer{background:#142a25;color:#e5dced;padding:26px 0}.foot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.85rem}.foot span:last-child{color:#c0cec5}.hidden{display:none!important}
+@media(max-width:760px){.navlinks a:not(.btn){display:none}.services{grid-template-columns:repeat(2,1fr)}.layout{grid-template-columns:1fr}.heading{align-items:start;flex-direction:column}.hero{min-height:330px}.stats{margin-bottom:42px}}
+@media(max-width:480px){.shell{width:calc(100% - 22px)}.services,.stats,.formgrid{grid-template-columns:1fr}.full{grid-column:auto}.booking{grid-template-columns:1fr}.hero{border-radius:20px}.navlinks .btn{padding:10px 13px;font-size:.82rem}}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+<header><div class="shell nav">
+  <a class="brand" href="#"><span class="mark">✦</span> VELVET <span style="color:var(--gold)">&</span> BLADE</a>
+  <nav class="navlinks"><a href="#services">Services</a><a href="#booking">Book</a><a href="#admin">Admin</a><a class="btn primary" href="#booking">Reserve a time ↗</a></nav>
+</div></header>
+<main class="shell">
+<section class="hero"><div class="eyebrow">✦ &nbsp; YOUR TIME. YOUR STYLE.</div><h1>A little time for <em>yourself.</em></h1><p>A considered cut. A little reset. Choose your service, reserve a time, and let our team take care of the details.</p><div class="actions"><a class="btn primary" style="background:#e5cfaa;color:#172b27" href="#booking">Book an appointment ↗</a><a class="btn soft" href="#services">Explore services</a></div></section>
+<div class="stats"><div class="stat"><b>Easy booking</b><span>Reserve in a few steps</span></div><div class="stat"><b>Made for you</b><span>Choose your preferred stylist</span></div><div class="stat"><b>Less waiting</b><span>Pick a time that works</span></div></div>
+<section id="services"><div class="heading"><div><div class="kicker">Our menu</div><h2>Find your next look.</h2></div><p>Thoughtful service, skilled hands, and a little extra confidence.</p></div><div class="services" id="serviceCards"></div></section>
+<section id="booking"><div class="heading"><div><div class="kicker">Reserve your spot</div><h2>Book an appointment.</h2></div><p>Choose your service, then select a date and available time.</p></div>
+<div class="layout"><div class="panel"><h3>Your appointment</h3><p class="muted">Fields marked * are required.</p>
+<form id="bookingForm"><div class="formgrid">
+<div class="field full"><label for="name">Full name *</label><input id="name" required maxlength="80" autocomplete="name" placeholder="Your full name"></div>
+<div class="field"><label for="phone">Phone number *</label><input id="phone" required maxlength="25" autocomplete="tel" placeholder="07xx xxx xxx"></div>
+<div class="field"><label for="email">Email (optional)</label><input id="email" type="email" maxlength="100" autocomplete="email" placeholder="you@example.com"></div>
+<div class="field full"><label for="service">Service *</label><select id="service" required></select></div>
+<div class="field"><label for="stylist">Preferred stylist *</label><select id="stylist" required><option>No preference</option><option>Alex</option><option>Jordan</option><option>Sam</option></select></div>
+<div class="field"><label for="date">Date *</label><input id="date" type="date" required></div>
+<div class="field full"><label for="time">Available time *</label><select id="time" required disabled><option>Choose a date first</option></select><span class="hint">Appointment times are shown in the salon's local time.</span></div>
+<div class="field full"><label for="notes">Notes (optional)</label><textarea id="notes" rows="3" maxlength="300" placeholder="Any special requests?"></textarea></div>
+</div><button class="btn primary submit" type="submit">Confirm booking ↗</button><div id="formNotice" class="notice" role="status" aria-live="polite"></div></form></div>
+<aside class="panel"><h3>Your visit, at a glance</h3><p class="muted">A comfortable booking experience.</p><div class="summary"><div class="summarytop"><div><h4 id="summaryName">Choose your service</h4><p id="summaryDesc">Your selected service appears here.</p></div><div id="summaryPrice" class="summaryprice">—</div></div><div class="summaryline" id="summaryDuration">◷ &nbsp; Service duration appears here</div></div><p class="note">This app stores appointment details in your connected database. Please do not enter sensitive personal information in the notes field.</p><p id="connectionStatus" class="note">Checking database connection…</p></aside>
+</div></section>
+<section id="admin" class="admin"><div class="heading"><div><div class="kicker">Private management</div><h2>Booking dashboard.</h2></div><p>Sign in with your administrator account to manage appointments.</p></div>
+<div class="panel">
+<div id="loginPanel"><h3>Administrator sign in</h3><p class="muted">Use the admin email and password you configured in Supabase.</p><form id="loginForm"><div class="formgrid"><div class="field"><label for="adminEmail">Email</label><input id="adminEmail" type="email" required autocomplete="username"></div><div class="field"><label for="adminPassword">Password</label><input id="adminPassword" type="password" required autocomplete="current-password"></div></div><button class="btn primary" style="margin-top:14px" type="submit">Sign in</button><div id="loginNotice" class="notice" role="status"></div></form></div>
+<div id="adminPanel" class="hidden"><div class="adminbar"><input id="searchBookings" type="search" placeholder="Search bookings…"><button id="refreshBookings" class="btn soft" type="button">Refresh</button><button id="exportCsv" class="btn soft" type="button">Export CSV ↓</button><button id="logout" class="btn danger" type="button">Sign out</button></div><div id="bookingList" class="bookinglist"></div><p class="note">Only authenticated accounts added to the admin allowlist can read or change bookings.</p></div>
+</div></section>
+</main>
+<footer><div class="shell foot"><span>© <span id="year"></span> Velvet & Blade</span><span>Portfolio project · HTML, CSS, JavaScript & Supabase</span></div></footer>
+<script>
+/*
+  SETUP: Replace these two placeholders with your Supabase project values.
+  Supabase Dashboard -> Project Settings -> API -> Project URL and anon/public key.
+  Never put a service_role key in browser code.
+*/
+const SUPABASE_URL = "https://iicrkfinndcigxmpbwiu.supabase.co";
+const SUPABASE_ANON_KEY = "sb_publishable_LRtDnRGjFtbE0VDLrGlORg_FZIfYqNm";
+const SERVICES = [
+ {id:"classic-cut",name:"Classic haircut",price:500,duration:30,description:"A clean, confident everyday look.",icon:"✂️"},
+ {id:"beard-trim",name:"Beard trim",price:300,duration:20,description:"A tidy finish with attention to detail.",icon:"🪒"},
+ {id:"braids",name:"Braiding",price:1500,duration:90,description:"Protective styling with a polished finish.",icon:"✨"},
+ {id:"wash-style",name:"Wash & style",price:800,duration:45,description:"Refresh, shape, and style your hair.",icon:"🫧"},
+ {id:"hair-colour",name:"Hair colouring",price:2500,duration:120,description:"A fresh colour for a new mood.",icon:"🎨"},
+ {id:"kids-cut",name:"Kids haircut",price:350,duration:25,description:"A friendly, easy haircut for little ones.",icon:"⭐"}
+];
+const $ = s => document.querySelector(s);
+const money = n => new Intl.NumberFormat("en-KE",{style:"currency",currency:"KES",maximumFractionDigits:0}).format(n);
+let db = null;
+let adminBookings = [];
+const serviceById = id => SERVICES.find(s=>s.id===id);
+const escapeHTML = s => String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function localToday(){const d=new Date();return new Date(d.getTime()-d.getTimezoneOffset()*60000).toISOString().slice(0,10)}
+function fmtDate(s){if(!s)return "";const [y,m,d]=s.split("-").map(Number);return new Date(y,m-1,d).toLocaleDateString("en-KE",{weekday:"short",day:"numeric",month:"short",year:"numeric"})}
+function fmtTime(t){if(!t)return "";const [h,m]=t.slice(0,5).split(":").map(Number);return `${h%12||12}:${String(m).padStart(2,"0")} ${h>=12?"PM":"AM"}`}
+function notice(el,msg,kind){el.textContent=msg;el.className=`notice show ${kind}`}
+function renderServices(){
+ $("#serviceCards").innerHTML=SERVICES.map(s=>`<article class="service"><div class="serviceicon">${s.icon}</div><h3>${s.name}</h3><p>${s.description}</p><div class="servicebottom"><div class="price">${money(s.price)}<span class="duration">${s.duration} minutes</span></div><button class="btn soft small" data-choose="${s.id}">Book this</button></div></article>`).join("");
+ $("#service").innerHTML='<option value="">Select a service</option>'+SERVICES.map(s=>`<option value="${s.id}">${s.name} — ${money(s.price)}</option>`).join("");
+}
+function updateSummary(){const s=serviceById($("#service").value);$("#summaryName").textContent=s?s.name:"Choose your service";$("#summaryDesc").textContent=s?s.description:"Your selected service appears here.";$("#summaryPrice").textContent=s?money(s.price):"—";$("#summaryDuration").textContent=s?`◷  ${s.duration} minutes`:"◷  Service duration appears here"}
+function configured(){return SUPABASE_URL.startsWith("https://")&&!SUPABASE_URL.includes("YOUR_")&&SUPABASE_ANON_KEY.length>30&&!SUPABASE_ANON_KEY.includes("YOUR_")}
+async function refreshTimes(){
+ const date=$("#date").value, select=$("#time");select.innerHTML="";
+ if(!date){select.disabled=true;select.innerHTML='<option value="">Choose a date first</option>';return}
+ if(!db){select.disabled=true;select.innerHTML='<option value="">Database not configured</option>';return}
+ select.disabled=true;select.innerHTML='<option value="">Loading available times…</option>';
+ const {data,error}=await db.rpc("get_booked_slots",{p_date:date});
+ if(error){select.innerHTML='<option value="">Could not load times</option>';$("#connectionStatus").textContent="Availability error: "+error.message;return}
+ const booked=new Set((data||[]).map(x=>String(x.start_time).slice(0,5)));
+ const now=new Date();let count=0;select.innerHTML='<option value="">Choose a time</option>';
+ for(let mins=9*60;mins<17*60;mins+=30){
+   const h=Math.floor(mins/60),m=mins%60, val=`${String(h).padStart(2,"0")}:${String(m).padStart(2,"0")}`;
+   if(booked.has(val))continue;
+   if(date===localToday()&&new Date(`${date}T${val}:00`)<=now)continue;
+   select.add(new Option(fmtTime(val),val));count++;
+ }
+ if(!count){select.innerHTML='<option value="">No times available — choose another date</option>';return}
+ select.disabled=false;
+}
+function renderAdmin(){
+ const q=$("#searchBookings").value.trim().toLowerCase();
+ const items=adminBookings.filter(b=>[b.customer_name,b.phone,b.email,b.service_name,b.stylist,b.appointment_date,b.start_time,b.notes].some(x=>String(x||"").toLowerCase().includes(q)));
+ const list=$("#bookingList");
+ if(!items.length){list.innerHTML='<div class="empty">No bookings found.</div>';return}
+ list.innerHTML=items.map(b=>`<article class="booking"><div><h4>${escapeHTML(b.customer_name)} · ${escapeHTML(b.service_name)}</h4><p>📅 ${escapeHTML(fmtDate(b.appointment_date))} at ${escapeHTML(fmtTime(b.start_time))} · Stylist: ${escapeHTML(b.stylist)}</p><p>☎ ${escapeHTML(b.phone)}${b.email?" · "+escapeHTML(b.email):""}</p>${b.notes?`<p>Note: ${escapeHTML(b.notes)}</p>`:""}<p><b>${money(b.price_kes)}</b> · ${escapeHTML(b.status)}</p></div><button class="btn danger small" data-cancel="${escapeHTML(b.id)}" type="button">Cancel</button></article>`).join("");
+}
+async function loadAdminBookings(){
+ if(!db)return;
+ const {data,error}=await db.from("bookings").select("*").order("appointment_date").order("start_time");
+ if(error){alert("Could not load bookings: "+error.message);return}
+ adminBookings=data||[];renderAdmin();
+}
+async function refreshAdminSession(){
+ if(!db)return;
+ const {data:{session}}=await db.auth.getSession();
+ $("#loginPanel").classList.toggle("hidden",!!session);
+ $("#adminPanel").classList.toggle("hidden",!session);
+ if(session) await loadAdminBookings();
+}
+renderServices();updateSummary();$("#year").textContent=new Date().getFullYear();$("#date").min=localToday();
+if(configured()&&window.supabase){db=window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY);$("#connectionStatus").textContent="Database configured. Availability loads from Supabase.";refreshAdminSession()}
+else{$("#connectionStatus").textContent="Setup required: add your Supabase project URL and anon key in index.html.";$("#time").innerHTML='<option>Configure Supabase first</option>'}
+$("#service").addEventListener("change",updateSummary);
+$("#date").addEventListener("change",refreshTimes);
+$("#serviceCards").addEventListener("click",e=>{const b=e.target.closest("[data-choose]");if(!b)return;$("#service").value=b.dataset.choose;updateSummary();$("#booking").scrollIntoView({behavior:"smooth"})});
+$("#bookingForm").addEventListener("submit",async e=>{
+ e.preventDefault();const n=$("#formNotice");if(!db){notice(n,"Connect Supabase first. Follow the setup guide included with this project.","bad");return}
+ const s=serviceById($("#service").value),date=$("#date").value,time=$("#time").value;
+ if(!s||!date||!time){notice(n,"Please select a service, date, and available time.","bad");return}
+ if(date<localToday()){notice(n,"Choose today or a future date.","bad");return}
+ const payload={customer_name:$("#name").value.trim(),phone:$("#phone").value.trim(),email:$("#email").value.trim()||null,service_id:s.id,service_name:s.name,stylist:$("#stylist").value,appointment_date:date,start_time:time,price_kes:s.price,duration_minutes:s.duration,notes:$("#notes").value.trim()||null};
+ const {error}=await db.from("bookings").insert(payload);
+ if(error){notice(n,error.message.includes("bookings_no_duplicate_start")||error.code==="23505"?"That time has just been booked. Please choose another time.":"Booking could not be saved: "+error.message,"bad");await refreshTimes();return}
+ notice(n,`Your booking request is saved for ${fmtDate(date)} at ${fmtTime(time)}. Please contact the salon directly if you need to change it.`,"ok");
+ e.target.reset();$("#date").min=localToday();updateSummary();await refreshTimes();
+});
+$("#loginForm").addEventListener("submit",async e=>{e.preventDefault();if(!db)return;const {error}=await db.auth.signInWithPassword({email:$("#adminEmail").value,password:$("#adminPassword").value});if(error){notice($("#loginNotice"),error.message,"bad");return}notice($("#loginNotice"),"Signed in successfully.","ok");await refreshAdminSession()});
+$("#logout").addEventListener("click",async()=>{await db.auth.signOut();adminBookings=[];$("#bookingList").innerHTML="";await refreshAdminSession()});
+$("#refreshBookings").addEventListener("click",loadAdminBookings);
+$("#searchBookings").addEventListener("input",renderAdmin);
+$("#bookingList").addEventListener("click",async e=>{const b=e.target.closest("[data-cancel]");if(!b)return;const row=adminBookings.find(x=>x.id===b.dataset.cancel);if(!row||!confirm(`Cancel booking for ${row.customer_name}?`))return;const {error}=await db.from("bookings").update({status:"cancelled"}).eq("id",row.id);if(error){alert(error.message);return}await loadAdminBookings();await refreshTimes()});
+$("#exportCsv").addEventListener("click",()=>{if(!adminBookings.length){alert("No bookings to export.");return}const cols=["customer_name","phone","email","service_name","stylist","appointment_date","start_time","price_kes","status","notes"];const cell=v=>`"${String(v??"").replace(/"/g,'""')}"`;const csv=[cols.join(","),...adminBookings.map(b=>cols.map(c=>cell(b[c])).join(","))].join("\r\n");const a=document.createElement("a");a.href=URL.createObjectURL(new Blob(["\ufeff"+csv],{type:"text/csv;charset=utf-8"}));a.download="salon-bookings.csv";a.click();URL.revokeObjectURL(a.href)});
+</script>
+</body></html>
